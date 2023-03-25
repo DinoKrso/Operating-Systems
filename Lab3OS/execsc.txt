@@ -1,0 +1,12 @@
+parent
+execsc
+execsc.c
+execsc.txt
+new.txt
+task.c
+test
+test.c
+waitSys
+waitSys.c
+zombie
+zombie.c
