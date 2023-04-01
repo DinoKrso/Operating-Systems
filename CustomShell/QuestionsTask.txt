@@ -1,0 +1,21 @@
+Q1: If we have a single-core, uniprocessor system that supports 
+multiprogramming, how many processes can be in a running state in such a 
+system, at any given time?
+
+
+Answer: In a single-core computer that can run multiple programs at once, 
+only one program can be actively running on the processor at any given 
+moment. However, the computer can quickly switch between programs to give 
+the appearance of them all running simultaneously.
+
+
+Q2: Explain why system calls are needed for a shared memory method of 
+inter-process communication (IPC). If there are multiple threads in one 
+process, are the system calls needed for sharing memory between those threads?
+
+Answer: Shared memory IPC allows processes to share data, but system calls 
+are required to synchronize access and prevent conflicts. Threads in the 
+same process share memory by default and don't need system calls, but 
+synchronization mechanisms are still necessary to avoid concurrency 
+issues. In both cases, synchronization is important for thread safety and 
+data consistency.
